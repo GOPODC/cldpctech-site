@@ -1,85 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CLD PCTECH ASA — PC Zusammenbau & Reparatur in Deutschland</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLD PCTECH – Computer Service & Systemoptimierung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background-color: #1e5f74;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0a3d62;
+      border-bottom: 2px solid #0a3d62;
+      padding-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      background: #0a3d62;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>CLD PCTECH</h1>
-      <nav>
-        <a href="#home">Start</a>
-        <a href="#services">Dienstleistungen</a>
-        <a href="#about">Über uns</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-    </div>
+
+  <header>
+    <h1>CLD PCTECH</h1>
+    <p>Ihr Partner für PC Service und Systemoptimierung</p>
   </header>
 
-  <main>
-    <section id="home" class="hero container">
-      <h2>Ihr Profi für PC-Bau & Reparatur in Deutschland</h2>
-      <p>Wir bauen maßgeschneiderte Computer: Gaming, Office, Workstation — zuverlässig, schnell und preiswert.</p>
-      <a class="cta" href="#contact">Angebot anfragen</a>
-    </section>
+  <nav>
+    <a href="#home">Startseite</a>
+    <a href="#optimierung">Systemoptimierung</a>
+    <a href="#ueber">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
-    <section id="services" class="container">
-      <h3>Unsere Dienstleistungen</h3>
-      <ul>
-        <li>Neuen PC zusammenbauen (Beratung + Montage)</li>
-        <li>Komponenten Upgrade (SSD, RAM, Grafikkarte)</li>
-        <li>Fehlerdiagnose & Reparatur</li>
-        <li>Systemoptimierung & Softwareinstallation</li>
-        <li>Netzwerk-Setup für Zuhause und Büro</li>
-      </ul>
-      <p class="note">Schneller Vor-Ort-Service möglich (Region abhängig). Kontaktieren Sie uns für Preise.</p>
-    </section>
+  <section id="home">
+    <h2>Willkommen bei CLD PCTECH</h2>
+    <p>Wir bieten maßgeschneiderte PC-Lösungen, die auf Ihre individuellen Anforderungen abgestimmt sind. 
+       Unser Ziel ist es, höchste Leistung und Zuverlässigkeit für jedes System zu gewährleisten.</p>
+  </section>
 
-    <section id="about" class="container">
-      <h3>Über CLD PCTECH ASA</h3>
-      <p>Wir sind ein kleines, aber erfahrenes Team, spezialisiert auf maßgeschneiderte PCs und professionelle Reparaturen. Qualität, Transparenz und Kundenzufriedenheit stehen bei uns an erster Stelle.</p>
-    </section>
+  <section id="optimierung">
+    <h2>Systemoptimierung</h2>
+    <p>Wir verbessern die Leistung Ihres Computers, beschleunigen Startzeiten und optimieren Software-Einstellungen für maximale Effizienz.</p>
+ 
+   
+  </section>
 
-    <section id="contact" class="container contact">
-      <h3>Kontakt</h3>
-      <p>Füllen Sie das Formular aus oder schreiben Sie uns eine E-Mail an <strong>info@cldpctech.de</strong> (Beispiel).</p>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input id="name" name="name" required />
+  <section id="ueber">
+    <h2>Über CLD PCTECH</h2>
+    <p>Wir sind ein erfahrenes Team, spezialisiert auf maßgeschneiderte PC-Systeme und professionelle Hardware-Montage. 
+       Qualität, Zuverlässigkeit und Kundenzufriedenheit stehen bei uns an erster Stelle.</p>
+  </section>
 
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" required />
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>📞 Telefon: +49-----<br>
+       📧 E-Mail: info@cldpctech.de<br>
+       📍 Standort: 68519 Viernheim Deutschland</p>
+  </section>
 
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Senden</button>
-      </form>
-      <div id="formResult" aria-live="polite"></div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> CLD PCTECH ASA — PC-Zusammenbau & Reparatur</p>
-    </div>
+  <footer>
+    <p>© 2025 CLD PCTECH – Alle Rechte vorbehalten</p>
   </footer>
 
-  <script>
-    // Jahr setzen
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Formular local (demo): simulăm trimiterea fără backend
-    document.getElementById('contactForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value || 'Kunde';
-      const msg = `Danke, ${name}! Ihre Anfrage wurde lokal empfangen. Wir melden uns bald.`;
-      document.getElementById('formResult').textContent = msg;
-      this.reset();
-    });
-  </script>
 </body>
 </html>
